@@ -1,0 +1,4 @@
+IdentitiesOnly yes
+AddKeysToAgent yes
+
+Include config.d/* 

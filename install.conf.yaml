@@ -1,0 +1,16 @@
+- clean: ['~']
+
+- create:
+    - ~/.zsh
+
+- link:
+    ~/.ssh/config:
+        path: ssh/config
+        create: true
+    ~/.zprofile: zprofile
+    ~/.zshrc: zshrc
+    ~/.zsh/git.zsh: zsh/git.zsh
+    ~/.zsh/git.plugin.zsh: zsh/git.plugin.zsh
+
+- shell:
+    - if [ ! -e "$HOME/.zsh/pure" ]; then git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"; fi
