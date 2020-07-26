@@ -1,4 +1,5 @@
-IdentitiesOnly yes
-AddKeysToAgent yes
+Host *
+    IdentitiesOnly yes
+    AddKeysToAgent yes
 
 Include config.d/* 
