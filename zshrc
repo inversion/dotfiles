@@ -24,3 +24,8 @@ setopt    incappendhistory  #Immediately append to the history file, not just wh
 
 # Autojump
 [ -f /usr/share/autojump/autojump.zsh ] && source /usr/share/autojump/autojump.zsh
+
+# nvm (if it's installed)
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
