@@ -1,7 +1,12 @@
 # Basic prompt setup
 fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
+autoload -Uz compinit; compinit
 prompt pure
+
+# Basic aliases
+alias ls='ls --color=auto'
+alias ll='ls -l'
 
 # Git aliases
 source $HOME/.zsh/git.zsh
